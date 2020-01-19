@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Game House</title>
+  <link rel="shortcut icon" type="image/png" href="./img/trang_chu/logo.png" />
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=vietnamese"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./style/style.css" />
+  <!--[if lt IE 9]>
+      <script src="lib/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div id="fb-root"></div>
+  <div class="container p-0">
+    <header class="header d-flex justify-content-between">
+      <div class="header__logo">
+        <a href="index.html"><img src="./img/trang_chu/logo.png" alt="LOGO GAMEHOUSE" /></a>
+      </div>
+      <!-- END header__logo -->
+
+      <div class="header__tools my-auto">
+        <button type="button" class="btn mr-1 header__signIn" data-toggle="modal" data-target="#signIn">
+          Đăng nhập
+        </button>
+        <button type="button" class="btn mr-1 header__signUp" data-toggle="modal" data-target="#signUp">
+          Đăng ký
+        </button>
+        <form class="form-inline d-inline center header__search">
+          <input class="form-control px-0" type="search" placeholder="timkiem..." aria-label="Search" />
+          <button class="btn my-2 my-sm-0" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </form>
+        <a class="header__social" href="#"><i class="fab fa-google-plus-g mx-1"></i></a>
+        <a class="header__social" href="www.facebook.com"><i class="fab fa-facebook-f mx-1"></i></a>
+        <a class="header__social" href="www.twitter.com"><i class="fab fa-twitter mx-1"></i></a>
+      </div>
+      <!-- END header__tools -->
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item mr-2">
+            <a class="nav-link text-decoration-none font-weight-bold text-dark" href="#">TRANG CHỦ<span
+                class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mr-2 dropdown">
+            <a class="nav-link dropdown-toggle text-decoration-none font-weight-bold text-dark" href="#"
+              id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              GAMES
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link text-decoration-none font-weight-bold text-dark" href="#">THÔNG TIN</a>
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link text-decoration-none font-weight-bold text-dark" href="#">LIÊN HỆ</a>
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link text-decoration-none font-weight-bold text-dark" href="#">TIN TỨC</a>
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link text-decoration-none font-weight-bold text-dark" href="#">NẠP TIỀN</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="content">
+      <div class="row my-3">
+        <div class="col-9 content__main">
+          <div class="row">
+            <div class="tab-content col-8 pr-0 content__picfix" id="v-pills-tabContent">
+              <div class="tab-pane fade content__pic" id="v-pills-content1" role="tabpanel"
+                aria-labelledby="v-pills-content1-tab">
+                <img src="./img/trang_chu/slider_2.png" alt="Call of Duty" />
+                <div class="content__pic-info">
+                  <h4>Call of Duty: Advanced War Digital Pro</h4>
+                  <span>14 Dec 2016 / 16 comment</span>
+                </div>
+              </div>
+              <div class="tab-pane fade show active content__pic" id="v-pills-content2" role="tabpanel"
+                aria-labelledby="v-pills-content2-tab">
+                <img src="./img/trang_chu/slider_6.jpg" alt="Naruto battle 2" />
+                <div class="content__pic-info">
+                  <h4>Naruto battle 2</h4>
+                  <span>14 Dec 2016 / 16 comment</span>
+                </div>
+              </div>
+              <div class="tab-pane fade content__pic" id="v-pills-content3" role="tabpanel"
+                aria-labelledby="v-pills-content3-tab">
+                <img src="./img/trang_chu/slider_7.jpg" alt="Crusader Kings II Way of Life" />
+                <div class="content__pic-info">
+                  <h4>Crusader Kings II Way of Life</h4>
+                  <span>14 Dec 2016 / 16 comment</span>
+                </div>
+              </div>
+              <div class="tab-pane fade content__pic" id="v-pills-content4" role="tabpanel"
+                aria-labelledby="v-pills-content4-tab">
+                <img src="./img/trang_chu/slider_8.jpg" alt="Diablo: The Last of Kingdom " />
+                <div class="content__pic-info">
+                  <h4>Diablo: The Last of Kingdom</h4>
+                  <span>14 Dec 2016 / 16 comment</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="nav col-4 content__nav-control" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <p class="content__pic-title title1">
+                <a class=" " id="v-pills-content1-tab" data-toggle="pill" href="#v-pills-content1" role="tab"
+                  aria-controls="v-pills-content1" aria-selected="false">Call of Duty: Advanced War Digital Pro</a>
+              </p>
+              <p class="content__pic-title title2">
+                <a class="active" id="content2-tab" data-toggle="pill" href="#v-pills-content2" role="tab"
+                  aria-controls="v-pills-content2" aria-selected="true">Naruto battle 2</a>
+              </p>
+              <p class="content__pic-title title3">
+                <a class=" " id="content3-tab" data-toggle="pill" href="#v-pills-content3" role="tab"
+                  aria-controls="v-pills-content3" aria-selected="false">Crusader Kings II Way of Life</a>
+              </p>
+              <p class="content__pic-title title4">
+                <a class="" id="content4-tab" data-toggle="pill" href="#v-pills-content4" role="tab"
+                  aria-controls="v-pills-content4" aria-selected="false">Diablo: The Last of Kingdom</a>
+              </p>
+            </div>
+
+            <div class="col-4 game__onl py-3">
+              <div class="topic-label pl-1">
+                <p>GAME ONLINE</p>
+              </div>
+              <div class="game-highlighted onl mb-3">
+                <div class="game-info">
+                  <p>Kingdom Come: Deliverance</p>
+                  <div class="game-info-detail mx-3 d-inline">
+                    <i class="fa fa-calendar-alt"></i>
+                    <span>12-3-1996 </span>
+                  </div>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-comment-alt"></i>
+                    <span>15 comment</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="game-item">
+                <img src="./img/trang_chu/gameonl_2.jpg" />
+                <div class="game-item-group">
+                  <p>Alone in the Darkness Illumina titanium</p>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-calendar-alt"></i>
+                    <span>12-3-1996 </span>
+                  </div>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-comment-alt"></i>
+                    <span>15 comment</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="game-item">
+                <img src="./img/trang_chu/gameonl_3.jpg" />
+                <div class="game-item-group">
+                  <p>Game Devil May Cry 4</p>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-calendar-alt"></i>
+                    <span>12-3-1996 </span>
+                  </div>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-comment-alt"></i>
+                    <span>15 comment</span>
+                  </div>
+                </div>
+              </div>
+              <div class="game-item">
+                <img src="./img/trang_chu/gameonl_4.jpg" />
+                <div class="game-item-group">
+                  <p>Lara Croft: The Temple of Osiris</p>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-calendar-alt"></i>
+                    <span>12-3-1996 </span>
+                  </div>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-comment-alt"></i>
+                    <span>15 comment</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 game__off px-0 mx-0 py-3">
+              <div class="topic-label pl-1">
+                <p>GAME OFFLINE</p>
+              </div>
+              <div class="game-highlighted off mb-3">
+                <div class="game-info">
+                  <p>Call of Duty: Advanced War Digital Pro</p>
+                  <div class="game-info-detail mx-3 d-inline">
+                    <i class="fa fa-calendar-alt"></i>
+                    <span>12-3-1996</span>
+                  </div>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-comment-alt"></i>
+                    <span>15 comments</span>
+                  </div>
+                </div>
+              </div>
+              <div class="game-item">
+                <img src="./img/trang_chu/gameoff_2.jpg" />
+                <div class="game-item-group">
+                  <p>Crusader Kings II: Way To Live</p>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-calendar-alt"></i>
+                    <span>12-3-1996 </span>
+                  </div>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-comment-alt"></i>
+                    <span>15 comment</span>
+                  </div>
+                </div>
+              </div>
+              <div class="game-item">
+                <img src="./img/trang_chu/gameoff_3.jpg" />
+                <div class="game-item-group">
+                  <p>Diablo: The Last King of Kingdom</p>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-calendar-alt"></i>
+                    <span>12-3-1996 </span>
+                  </div>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-comment-alt"></i>
+                    <span>15 comment</span>
+                  </div>
+                </div>
+              </div>
+              <div class="game-item">
+                <img src="./img/trang_chu/gameoff_4.jpg" />
+                <div class="game-item-group">
+                  <p>League of Legend</p>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-calendar-alt"></i>
+                    <span>12-3-1996 </span>
+                  </div>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-comment-alt"></i>
+                    <span>15 comment</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 game__update py-3">
+              <div class="topic-label pl-1">
+                <p>MỚI CẬP NHẬT</p>
+              </div>
+              <div class="game-item">
+                <img src="./img/trang_chu/MCNhat_1.jpg" />
+                <div class="game-item-group">
+                  <p>Diablo: The Last King of Kingdom</p>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-calendar-alt"></i>
+                    <span>12-3-1996 </span>
+                  </div>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-comment-alt"></i>
+                    <span>15 comment</span>
+                  </div>
+                </div>
+              </div>
+              <div class="game-item">
+                <img src="./img/trang_chu/MCNhat_2.jpg" />
+                <div class="game-item-group">
+                  <p>Diablo: The Last King of Kingdom</p>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-calendar-alt"></i>
+                    <span>12-3-1996 </span>
+                  </div>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-comment-alt"></i>
+                    <span>15 comment</span>
+                  </div>
+                </div>
+              </div>
+              <div class="game-item">
+                <img src="./img/trang_chu/MCNhat_5.jpg" />
+                <div class="game-item-group">
+                  <p>Diablo: The Last King of Kingdom</p>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-calendar-alt"></i>
+                    <span>12-3-1996 </span>
+                  </div>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-comment-alt"></i>
+                    <span>15 comment</span>
+                  </div>
+                </div>
+              </div>
+              <div class="game-item">
+                <img src="./img/trang_chu/MCNhat_4.jpg" />
+                <div class="game-item-group">
+                  <p>Diablo: The Last King of Kingdom</p>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-calendar-alt"></i>
+                    <span>12-3-1996 </span>
+                  </div>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-comment-alt"></i>
+                    <span>15 comment</span>
+                  </div>
+                </div>
+              </div>
+              <div class="game-item">
+                <img src="./img/trang_chu/MCNhat_3.jpg" />
+                <div class="game-item-group">
+                  <p>Diablo: The Last King of Kingdom</p>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-calendar-alt"></i>
+                    <span>12-3-1996 </span>
+                  </div>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-comment-alt"></i>
+                    <span>15 comment</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content__tintuc col-8">
+              <div class="topic-label pl-1">
+                <p>TIN TỨC</p>
+              </div>
+
+              <div class="game-item">
+                <div class="game-item-img tintuc1">
+                  <!-- <img src="./img/trang_chu/slider_4.jpg" /> -->
+                </div>
+                <div class="game-item-group">
+                  <p>Game Devil May Cry 4</p>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-calendar-alt"></i>
+                    <span>12-3-1996 </span>
+                  </div>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-comment-alt"></i>
+                    <span>15 comment</span>
+                  </div>
+                  <p>
+                    Mang trên mình lối chơi hành động vũ bão, một nền đồ họa đẹp phong cách nghệ
+                    thuật...
+                  </p>
+                </div>
+              </div>
+
+              <div class="game-item">
+                <div class="game-item-img tintuc2">
+                  <!-- <img src="./img/trang_chu/slider_4.jpg" /> -->
+                </div>
+                <div class="game-item-group">
+                  <p>PS4, PS3, PS Vita Games Discounted in PSN</p>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-calendar-alt"></i>
+                    <span>12-3-1996 </span>
+                  </div>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-comment-alt"></i>
+                    <span>15 comment</span>
+                  </div>
+                  <p>
+                    Mang trên mình lối chơi hành động vũ bão, một nền đồ họa đẹp phong cách nghệ
+                    thuật...
+                  </p>
+                </div>
+              </div>
+
+              <div class="game-item">
+                <div class="game-item-img tintuc3">
+                  <!-- <img src="./img/trang_chu/slider_4.jpg" /> -->
+                </div>
+                <div class="game-item-group">
+                  <p>Steam Winter Sale 2016 Pick of the Day</p>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-calendar-alt"></i>
+                    <span>12-3-1996 </span>
+                  </div>
+                  <div class="game-info-detail mx-2 d-inline">
+                    <i class="fa fa-comment-alt"></i>
+                    <span>15 comment</span>
+                  </div>
+                  <p>
+                    Mang trên mình lối chơi hành động vũ bão, một nền đồ họa đẹp phong cách nghệ
+                    thuật...
+                  </p>
+                </div>
+              </div>
+              <button class="btn tintuc__them w-100 border-0 py-2 my-3 text-white" type="button">
+                SHOW ALL POSTS
+              </button>
+            </div>
+            <!-- END content__tintuc -->
+          </div>
+          <!-- END row -->
+        </div>
+        <!-- END col-9 content__main -->
+
+        <div class="col-3 sidebanner">
+          <div class="topic-label pl-1">
+            <p>ADVERTISEMENT</p>
+          </div>
+          <div class="sidebanner__img">
+            <img src="./img/trang_chu/image1.png" />
+            <img src="./img/trang_chu/Untitled-1_03.jpg" />
+            <img src="./img/trang_chu/Untitled-3.png" />
+            <p>Bao thuế trước bạ</p>
+            <p>Giảm giá</p>
+            <p>
+              Ưu đãi đặc biệt <br />
+              Cho mùa hè khám phá
+            </p>
+          </div>
+
+          <div class="topic-label pl-1">
+            <p>TOP GAMES</p>
+          </div>
+          <div class="topgames__list">
+            <div class="topgames-item item1">
+              <p>Crusader Kings II Way of Life</p>
+            </div>
+            <div class="topgames-item item2">
+              <p>Alone in the Dark Illumination</p>
+            </div>
+            <div class="topgames-item item3">
+              <p>Naruto battle 2</p>
+            </div>
+            <div class="topgames-item item4">
+              <p>Kingdom Come: Deliverance</p>
+            </div>
+            <div class="topgames-item item5">
+              <p>Game Devil May Cry 4</p>
+            </div>
+          </div>
+          <!-- END topgames__list -->
+
+          <div class="topic-label pl-1">
+            <p>FIND US ON FACEBOOK</p>
+          </div>
+          <div class="fb-page" data-href="https://www.facebook.com/facebook" data-tabs="" data-width="" data-height=""
+            data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
+            data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore">
+              <a href="https://www.facebook.com/facebook">Facebook</a>
+            </blockquote>
+          </div>
+        </div>
+        <!-- END sidebanner -->
+      </div>
+      <!-- END content_main -->
+    </section>
+    <!-- END content -->
+    <footer>
+      <div class="footer__list pt-5 px-4">
+        <div class="footer__menu">
+          <div class="topic-label pl-1">
+            <p>MENU</p>
+          </div>
+          <ul>
+            <li><a href="#">TRANG CHỦ</a></li>
+            <li><a href="#">GAMES</a></li>
+            <li><a href="#">THÔNG TIN</a></li>
+            <li><a href="#">LIÊN HỆ</a></li>
+            <li><a href="#">TIN TỨC</a></li>
+          </ul>
+        </div>
+        <div class="footer__gametypes">
+          <div class="topic-label pl-1">
+            <p>THỂ LOẠI GAMES</p>
+          </div>
+          <div class="footer__gametypes-group">
+            <ul>
+              <li><a href="#">NHẬP VAI</a></li>
+              <li><a href="#">CHIẾN THUẬT</a></li>
+              <li><a href="#">HÀNH ĐỘNG</a></li>
+              <li><a href="#">THỂ THAO</a></li>
+              <li><a href="#">CHIẾN TRANH</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#">CƯỚP CỜ</a></li>
+              <li><a href="#">U.R.F</a></li>
+              <li><a href="#">TRÍ TUỆ</a></li>
+              <li><a href="#">ĐUA XE</a></li>
+              <li><a href="#">KIẾM HIỆP</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__contact">
+          <div class="topic-label pl-1">
+            <p>LIÊN HỆ</p>
+          </div>
+          <p>Telephone: +84 122 090 9999</p>
+          <p>FAX: +1 800 889 9898</p>
+          <p>420 LE LOI, DST 1, HCM CITY</p>
+          <p>Email: gamehouse999@gmail.com</p>
+        </div>
+        
+      </div>
+      <p>COPYRIGHT © 2014 GAMES HOUSE / TEMPLATE DESIGNED BY: DANG TRUNG HIEU</p>
+    </footer>
+    <!-- END footer -->
+  </div>
+  <!-- END container -->
+
+  <!-- Modal SignIn -->
+  <div class="modal fade text-dark" id="signIn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-weight-bold" id="exampleModalLabel">
+            Đăng Nhập
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="password"> Password</label>
+              <input type="password" id="password" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-primary" data-dismiss="modal">
+              Đăng nhập
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal SignUp -->
+  <div class="modal fade text-dark" id="signUp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title font-weight-bold" id="exampleModalLabel">
+            Đăng Ký
+          </h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="email"> Email</label>
+              <input type="email" id="email" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="password"> Password</label>
+              <input type="password" id="password" class="form-control" />
+            </div>
+            <button type="submit" class="btn btn-primary" data-dismiss="modal">
+              Đăng Ký
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FACEBOOK SDK -->
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

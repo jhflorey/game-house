@@ -1,0 +1,321 @@
+header,
+section,
+footer,
+aside,
+nav,
+main,
+article,
+figure {
+  display: block;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #181818;
+  color: white;
+}
+
+/* HEADER CSS */
+.header__logo img {
+  width: 300px;
+}
+.header__tools {
+  display: flex;
+  align-items: center;
+}
+.header__tools .header__signIn,
+.header__signUp {
+  background-color: #ff8601;
+  width: 120px;
+  color: white;
+  box-shadow: none !important;
+}
+.header__search button {
+  background-color: #ff8601;
+  color: white;
+}
+.header__social i {
+  color: white;
+  font-size: 30px;
+}
+/* END HEADER CSS */
+
+/* NAVIGATION CSS */
+
+/* END NAVIGATION CSS */
+
+/* CONTENT CSS */
+.content__pic {
+    position: relative;
+}
+.content__pic img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.content__pic-info {
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+}
+.content__pic-info span {
+  display: inline-block;
+  background-color: #ff8601;
+  font-size: 12px;
+  padding: 5px 10px;
+}
+.content__nav-control {
+    height: 400px;
+}
+.content__nav-control .content__pic-title {
+  width: 100%;
+  border-top: solid 0.5px grey;
+  margin: 0;
+  padding-left: 10px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.content__nav-control a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+.content__nav-control .content__pic-title.active,
+.content__pic-title:hover {
+  background-color: black;
+  border-left: #ff8601 3px solid;
+}
+.content__nav-control .content__pic-title.active a,
+.content__pic-title:hover a {
+  color: #ff8601;
+}
+
+/* GAME ONLINE & OFFLINE & MỚI CẬP NHẬT CSS */
+.onl {
+    background-image: url(../img/trang_chu/gameonl_1.png);
+}
+.off {
+    background-image: url(../img/trang_chu/gameoff_1.jpg);
+}
+.game-highlighted {
+    position: relative;
+    background: cover no-repeat center;
+    height: 200px;
+}
+.game-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.game-highlighted .game-info p {
+    font-weight: 700;
+    margin: 0 12px 0;
+}
+.game-info-detail span,i {
+    color: darkgrey;
+    font-size: 12px;
+}
+.game-item p {
+    margin: 0 10px 0;
+}
+.game-item {
+    display: flex;
+    border-bottom: 0.5px solid grey;
+    margin: 10px auto;
+}
+.game-item-group > p {
+  font-weight: 700;
+}
+.game-item img {
+    height: 100%;
+}
+.game__update .game-item img {
+    height:85px;
+    width: auto;
+}
+
+/* TIN TỨC CSS */
+.content__tintuc .game-item {
+  width: 100%;
+  display: flex;
+}
+.content__tintuc .game-item .game-item-group {
+  width: 65%;
+  
+}
+.content__tintuc .game-item .game-item-img{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 35%;
+  height: 180px;
+} 
+.content__tintuc .game-item .game-item-group p:last-child {
+  color: darkgrey;
+  margin-top: 20px;
+  font-weight: 400;
+}
+.tintuc1 {
+  background-image: url(../img/trang_chu/tingame_1.jpg);
+}
+.tintuc2 {
+  background-image: url(../img/trang_chu/tingame_2.jpg);
+}
+.tintuc3 {
+  background-image: url(../img/trang_chu/tingame_3.jpg);
+}
+.content__tintuc .tintuc__them{
+  font-weight: 700;
+  background-color: #ff8601;
+}
+/* END CONTENT CSS */
+
+/* SIDEBANNER CSS */
+.topic-label {
+  background: linear-gradient(45deg, #ff8601 70%, black 30%);
+}
+.topic-label p {
+  font-weight: 700;
+}
+.sidebanner__img {
+  position: relative;
+  margin-bottom: 20px;
+}
+.sidebanner__img img:first-child {
+  width: 100%;
+  border: black solid 2px;
+}
+.sidebanner__img img:nth-child(2) {
+  position: absolute;
+  top: 1%;
+  left: 2%;
+  border-radius: 3px;
+}
+.sidebanner__img img:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.sidebanner__img p:nth-child(4) {
+  position: absolute;
+  top: 12%;
+  left: 23%;
+  font-size: 18px;
+}
+.sidebanner__img p:nth-child(5) {
+  position: absolute;
+  bottom: 50%;
+  right: 5%;
+  font-size: 18px;
+}
+.sidebanner__img p:last-child {
+  position: absolute;
+  bottom: -1%;
+  left: 0;
+  font-size: 13px;
+  margin: 0;
+  padding-left: 10px;
+}
+
+/* TOPGAMES CSS */
+.topgames__list {
+    margin-bottom: 20px;
+}
+.topgames-item {
+  position: relative;
+  height: 120px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.item1 {
+  background-image: url(../img/trang_chu/topgame_1.jpg);
+}
+.item2 {
+  background-image: url(../img/trang_chu/topgame_2-08.jpg);
+}
+.item3 {
+  background-image: url(../img/trang_chu/topgame_3.jpg);
+}
+.item4 {
+  background-image: url(../img/trang_chu/topgame_4.jpg);
+}
+.item5 {
+  background-image: url(../img/trang_chu/topgame_5.jpg);
+}
+.topgames-item p {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%); 
+  
+}
+/* END SIDEBANNER CSS */
+
+/* FOOTER CSS */
+footer {
+  background-color: black;
+}
+
+footer .footer__list .topic-label {
+  background: linear-gradient(45deg, #ff8601 70%, grey 30%);
+}
+footer .footer__list {
+  display: flex;
+  justify-content: space-between;
+ 
+}
+.footer__menu {
+  flex-grow: 1;
+  margin: 0 15px;
+}
+.footer__menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+footer .footer__menu ul li {
+  margin: 10px 0;
+  padding: 0;
+}
+footer .footer__menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+.footer__gametypes {
+  flex-grow: 2;
+  margin: 0 15px;
+}
+.footer__gametypes-group {
+  display: flex;
+  /* justify-content: fl; */
+  text-align: left;
+}
+.footer__gametypes-group ul {
+  list-style: none;
+  margin: 0 50px;
+  padding: 0;
+}
+footer .footer__gametypes-group ul li {
+  margin: 10px 0;
+  padding: 0;
+}
+footer .footer__gametypes-group ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer > p {
+  border-top: 0.2px solid grey;
+  text-align: center;
+  padding: 10px 0;
+  margin: 0;
+}
+.footer__contact {
+  flex-grow: 1;
+  margin: 0 15px;
+}
+/* END FOOTER CSS */
